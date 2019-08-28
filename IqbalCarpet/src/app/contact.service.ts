@@ -30,7 +30,10 @@ export class ContactService {
     return this.http.post('http://localhost:3000/api/contact', newContact,{headers:headers})
   }
 
-  deleteContact(id:any){
+  deleteContact(id:number){
     return this.http.delete('http://localhost:3000/api/contact/'+ id)
   }
+  // deleteContact(id: number) {
+  //   return this.http.delete(`http://localhost:3000/api/contact/' + id)
+  // }
 }

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatButtonModule} from '@angular/material';
+import {MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule, routingcomponents } from './app-routing.module';
@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactsComponent } from './contacts/contacts.component';
+import { AngnavbarComponent } from './angnavbar/angnavbar.component';
 
 @NgModule({
   declarations: [
@@ -31,14 +32,19 @@ import { ContactsComponent } from './contacts/contacts.component';
     NavbarComponent,
     LoginComponent,
     Navbar2Component,
-    ContactsComponent
+    ContactsComponent,
+    AngnavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,33 +1,25 @@
-<!-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
-  <label  class="btn btn-outline-primary border-color">
-    <button mat-raised-button (click)="login()">Login</button>
-  </label>
-  <label class="btn btn-outline-primary border-color">
-    <button mat-raised-button (click)="login()">SignUp</button> 
-  </label>
-</div> -->
 
 <!-- main page -->
-<mat-toolbar color="darkgrey">
+<mat-toolbar color="primary">
   <mat-toolbar-row>
     <button mat-icon-button>
       <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
     </button>
-    <h1>IQBAL CARPETS</h1>
+    <h1>SimpleCRM</h1>
     <span class="menu-spacer"></span>
     <div>
-      <a mat-button [routerLink]="'/about'"> About Company </a>
+      <a mat-button [routerLink]="'/accounts'"> Accounts </a>
+      <a mat-button [routerLink]="'/create-account'"> Create Account </a>
       <a mat-button [routerLink]="'/contacts'"> Contacts </a>
       <a mat-button [routerLink]="'/create-contact'"> Create Contact </a>
       <a mat-button [routerLink]="'/activities'"> Activities </a>
-      <a mat-button [routerLink]="'/login'"> Login </a>
-      <a mat-button [routerLink]="'/register'"> Create Your Account </a>
+      <a mat-button [routerLink]="'/create-activity'"> Create Activity </a>
 
     </div>
   </mat-toolbar-row>
 
   <mat-toolbar-row>
-      <span style="font-size: 12px;">Iqbal Carpets helps you easily buy your Favourite</span>
+      <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
     </mat-toolbar-row>
 </mat-toolbar>
 
